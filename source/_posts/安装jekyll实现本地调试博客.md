@@ -12,15 +12,16 @@
 
 输入以下代码，等待了较长时间才装好,发现是4.0版本的，而网上的教程大都是3.0版本
 
-```gem install jekyll```
+```
+gem install jekyll
+gem install jekyll bundler
+```
 
-```gem install jekyll bundler```
-
-![](https://raw.githubusercontent.com/jpzhouchina/PicBed/master/img/20200113002008.jpg)
+<img src="https://raw.githubusercontent.com/jpzhouchina/PicBed/master/img/20200113002008.jpg" style="zoom:80%;" />
 
 直接输入```jekyll s```后却直接报错（此处运行平台变为powershell）
 
-![](https://raw.githubusercontent.com/jpzhouchina/PicBed/master/img/20200113002016.jpg)
+<img src="https://raw.githubusercontent.com/jpzhouchina/PicBed/master/img/20200113002016.jpg" style="zoom: 60%;" />
 
 报错的意思是我在_config.yml配置文件中未包含```plugins: [jekyll-paginate]```这行代码，查询后发现paginate是一个分页工具，官方介绍[可点此处](http://jekyllcn.com/docs/pagination/)。解决方案就是把配置文件中的```gems: [jekyll-paginate]```换成```plugins: [jekyll-paginate]```，并且用```gem install ‘jekyll-paginate’```命令安装缺失的插件，此处参考自[csdn博客](https://blog.csdn.net/henryhu712/article/details/84800410)。
 
