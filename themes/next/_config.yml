@@ -589,7 +589,7 @@ comments:
 # Disqus
 disqus:
   enable: true
-  shortname:zhoujiapeng
+  shortname: zhoujiapeng
   count: true
   #post_meta_order: 0
 
@@ -677,7 +677,7 @@ add_this_id:
 
 # Google Analytics
 google_analytics:
-  tracking_id: # <app_id>
+  tracking_id: UA-156427628-1
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
